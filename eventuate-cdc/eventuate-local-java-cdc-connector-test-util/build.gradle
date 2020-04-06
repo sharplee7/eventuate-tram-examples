@@ -1,0 +1,8 @@
+dependencies {
+    compile project(":eventuate-local-java-cdc-connector-common")
+    compile "io.eventuate.common:eventuate-common-jdbc:$eventuateCommonVersion"
+}
+
+test {
+    forkEvery 1
+}
